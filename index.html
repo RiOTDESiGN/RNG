@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Number Generator</title>
+</head>
+<body>
+    <div class="generatorbody">
+
+        <div id="custom-modal">
+          <div class="modal-content">
+            <p class="warning-text">Maximum random numbers generated, please reset your generator.</p>
+            <button id="close-btn">OK</button>
+          </div>
+        </div>
+      
+        <div class="header">
+            <div class="progress-container">
+              <div class="progress-bar" id="myBar"></div>
+            </div>
+          </div>
+
+        <div class="numberdisplay">
+            <div id="average" class="numbers">0</div>
+            <div id="current-number" class="numbers numbercenter">0</div>
+            <div id="previous-number" class="numbers">0</div>
+        </div>
+
+        <div class="displaytitles">
+            <label for="average" class="displaytext">average</label>
+            <label for="current-number" class="displaytext">generated</label>
+            <label for="previous-number" class="displaytext">previous</label>
+        </div>
+
+        <div id="count" class="totalnumber">0</div>
+        <label for="count" class="totaltext">total numbers</label>
+
+        <div class="generate button-flex">
+            <button id="generate-button">generate</button>
+        </div>
+
+        <label class="auto button-flex">
+            <input type="checkbox" id="auto-generate-button" class="toggle-off">
+            <span id="auto-generate-button-style" class="checkmark align">auto</span>
+        </label>
+
+        <div class="checkboxes">
+            <input type="checkbox" id="toggle-odd-numbers" class="oddbox">
+            <input type="checkbox" id="toggle-even-numbers" class="evenbox">
+            <input type="checkbox" id="toggle-prime-numbers" class="primebox">
+            <input type="checkbox" id="toggle-composite-numbers" class="compositebox">
+            <input type="checkbox" id="toggle-binary-numbers" class="binarybox">
+            <input type="checkbox" id="toggle-all-numbers">
+            <label for="toggle-odd-numbers" class="checkbox-titles vertical-text">odd</label>
+            <label for="toggle-even-numbers" class="checkbox-titles vertical-text">even</label>
+            <label for="toggle-prime-numbers" class="checkbox-titles vertical-text">prime</label>
+            <label for="toggle-composite-numbers" class="checkbox-titles vertical-text">composite</label>
+            <label for="toggle-binary-numbers" class="checkbox-titles vertical-text">binary</label>
+            <label for="toggle-all-numbers" class="checkbox-titles vertical-text">all</label>
+        </div>
+
+        <div class="reset button-flex">
+            <button id="reset-button">reset</button>
+        </div>
+
+        <div id="number-history" class="history align"></div>
+
+    </div>
+
+  <nav id="nav">
+    <button class="nav-icon" id="nav-icon"><span></span></button>
+    <ul>
+      <li></li>
+      <li><input type="color" id="border-color-picker" value="#979797">border</li>
+      <li></li>
+      <li><input type="color" id="bg-color-picker" value="#2b2b2b">background</li>
+      <li></li>
+      <li class="color-reset align"><a href="#" id="reset">reset color</a></li>
+    </ul>
+  </nav>
+</body>
+</html>
